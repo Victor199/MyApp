@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Misarchivos:</strong>
+  <%= @archivo.misarchivos %>
+</p>
+
+<p>
+  <strong>Reservas:</strong>
+  <%= @archivo.reservas %>
+</p>
+
+<p>
+  <strong>Adiciones:</strong>
+  <%= @archivo.adiciones %>
+</p>
+
+<%= link_to 'Edit', edit_archivo_path(@archivo) %> |
+<%= link_to 'Back', archivos_path %>

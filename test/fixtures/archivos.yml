@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  misarchivos: MyString
+  reservas: MyString
+  adiciones: MyString
+
+two:
+  misarchivos: MyString
+  reservas: MyString
+  adiciones: MyString

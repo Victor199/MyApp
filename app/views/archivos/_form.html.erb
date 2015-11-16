@@ -1,0 +1,29 @@
+<%= form_for(@archivo) do |f| %>
+  <% if @archivo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@archivo.errors.count, "error") %> prohibited this archivo from being saved:</h2>
+
+      <ul>
+      <% @archivo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :misarchivos %><br>
+    <%= f.file_field :misarchivos %>
+  </div>
+  <div class="field">
+    <%= f.label :reservas %><br>
+    <%= f.text_field :reservas %>
+  </div>
+  <div class="field">
+    <%= f.label :adiciones %><br>
+    <%= f.text_field :adiciones %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

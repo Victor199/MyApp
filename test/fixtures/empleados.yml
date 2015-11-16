@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Apellido: MyString
+  Edad: 1
+  fecha: 2015-11-13 15:45:20
+  Diploma: false
+
+two:
+  Apellido: MyString
+  Edad: 1
+  fecha: 2015-11-13 15:45:20
+  Diploma: false

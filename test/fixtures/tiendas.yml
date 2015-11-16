@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sucursales: MyString
+  direccion: MyString
+  articulo: MyString
+
+two:
+  sucursales: MyString
+  direccion: MyString
+  articulo: MyString

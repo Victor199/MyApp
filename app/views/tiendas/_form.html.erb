@@ -1,0 +1,29 @@
+<%= form_for(@tienda) do |f| %>
+  <% if @tienda.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tienda.errors.count, "error") %> prohibited this tienda from being saved:</h2>
+
+      <ul>
+      <% @tienda.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sucursales %><br>
+    <%= f.file_field :sucursales %>
+  </div>
+  <div class="field">
+    <%= f.label :direccion %><br>
+    <%= f.text_field :direccion %>
+  </div>
+  <div class="field">
+    <%= f.label :articulo %><br>
+    <%= f.text_field :articulo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
